@@ -1,0 +1,22 @@
+
+public class EvenFib {
+	public static void main(String[] args) {
+		
+	int Fi=1;
+	int Fj=2;
+	int Fn=0;
+	int sum=0;
+	while(Fn<4000000) {
+		Fn=Fi+Fj;
+			Fi=Fj;
+			Fj=Fn;
+			System.out.println(Fn);
+			if(Fn%2==0) {
+				sum+=Fn;
+			}
+	}
+	sum+=2;
+	System.out.println("The Sum Is: "+sum);
+}
+
+}
