@@ -1,0 +1,17 @@
+
+public class NaturalDifference {
+public static void main(String[] args) {
+	int sum=0; 
+	for(int n=1; n<=100; n++) {
+		int k= (int)Math.pow(n, 2);
+		sum+=k;
+	}
+	int nat=0;
+	for(int b=1; b<=100; b++) {
+		nat+=b;
+	}
+	int s = (int)Math.pow(nat, 2);
+	int diff= s-sum;
+	System.out.println(diff);
+}
+}
