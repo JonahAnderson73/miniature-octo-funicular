@@ -1,0 +1,19 @@
+
+public class LargestPrimeFactor {
+	public static void main(String[] args) {
+		int x=1;
+		int a=2;
+		while(x<=20) {
+			if (a%x==0) {
+				x++;
+			}
+			else {a++;x=1;}
+		
+			
+		
+			
+			
+		}System.out.println(a);
+	}
+
+}
